@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pagina web</title>
 </head>
+<style>
+    .fondo {
+        --opacidad-negro: 0.7;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("img/background__welcome.jpg");
+        }
+</style>
+
 <body>
-    s
+    <main id="principal" class="w-full h-screen bg-no-repeat bg-cover   "
+        style="background-image: url('/asset/background__welcome.jpg') ">
+        <nav class="flex justify-center items-center w-[100%] fixed ">
+            <div class="bg-blue-900 w-[100%] p-[9px]" id="banner">
+                <div id="logo" class="flex items-center p-[10px] pl-20 ">
+                   <img class="  w-[100px] h-[100px] rounded-full "
+                        src="/asset/logo.png" alt=""> <p class="text-white font-bold text-2xl p-[20px]">R&A Web</p>
+                        <div class="ml-[500px] ">
+                            <ul class="text-violet-600 flex		">
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	"><a href="#inicio">INICIO</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">ACERCA</li>
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">SERVICIOS</li>
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">PORTAFOLIO</li>
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">TESTIMONIOS</li>
+                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">CONTACTO</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class=" fondo flex flex-col justify-center items-center h-[100%] w-[100%]" id="contenido">
+            <div class="text-9xl text-white p-[20px] text-center w-[900px] font-bold">Bienvenid@s a mi sitio</div>
+
+            <button
+                class="p-[20px] rounded-full bg-pink-600 text-white text-solid font-bold w-[20%] hover:text-fuchsia-600 hover:bg-white font-bold text-2xl">CONTACTAME</button>
+        </div>
+        <div class="bg-neutral-300 h-[2000px] flex justify-between " id="inicio">
+            <div class="w-[100%]" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
