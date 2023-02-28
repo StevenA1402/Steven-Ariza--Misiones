@@ -12,25 +12,31 @@
     .fondo {
         --opacidad-negro: 0.7;
         background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("img/background__welcome.jpg");
-        }
+    }
 </style>
 
 <body>
-    <main id="principal" class="w-full h-screen bg-no-repeat bg-cover   "
+    <main id="Inicio" class="w-full h-screen bg-no-repeat bg-cover   "
         style="background-image: url('/asset/background__welcome.jpg') ">
-        <nav class="flex justify-center items-center w-[100%] fixed ">
+        <nav class="flex justify-center items-center w-full fixed ">
             <div class="bg-blue-900 w-[100%] p-[9px]" id="banner">
                 <div id="logo" class="flex items-center p-[10px] pl-20 ">
-                   <img class="  w-[100px] h-[100px] rounded-full "
-                        src="/asset/logo.png" alt=""> <p class="text-white font-bold text-2xl p-[20px]">R&A Web</p>
-                        <div class="ml-[500px] ">
-                            <ul class="text-violet-600 flex		">
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	"><a href="#inicio">INICIO</a></li>
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">ACERCA</li>
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">SERVICIOS</li>
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">PORTAFOLIO</li>
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">TESTIMONIOS</li>
-                            <li class="p-[30px] font-bold text-3xl text-fuchsia-600 hover:text-white cursor-pointer	">CONTACTO</li>
+                    <img class="  w-[100px] h-[100px] rounded-full " src="/asset/logo.png" alt="">
+                    <p class="text-white font-bold text-2xl p-[20px]">R&A Web</p>
+                    <div class="ml-[500px] ">
+                        <ul class="text-violet-600 flex		">
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#Inicio">INICIO</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#Acerca">ACERCA</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#servicios">SERVICIOS</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#portafolio"> PORTAFOLIO</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#testimonios"> TESTIMONIOS</a></li>
+                            <li class="p-[30px] font-bold text-3xl text-pink-600 hover:text-white cursor-pointer	"><a
+                                    href="#contacto">CONTACTO</li></a>
                         </ul>
                     </div>
                 </div>
@@ -41,19 +47,178 @@
             <div class="text-9xl text-white p-[20px] text-center w-[900px] font-bold">Bienvenid@s a mi sitio</div>
 
             <button
-                class="p-[20px] rounded-full bg-pink-600 text-white text-solid font-bold w-[20%] hover:text-fuchsia-600 hover:bg-white font-bold text-2xl">CONTACTAME</button>
-        </div>
-        <div class="bg-neutral-300 h-[2000px] flex justify-between " id="inicio">
-            <div class="w-[100%]" >
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                
-            </div>
+                class="p-[20px] rounded-full bg-pink-600 text-white text-solid font-bold w-[400px] hover:border-[1px] hover:border-solid hover:border-[#E80F88]  hover:text-fuchsia-600 hover:bg-white font-bold text-2xl">CONTACTAME</button>
         </div>
     </main>
+
+    <div id="Acerca" class="bg-neutral-300 flex flex-col p-[15px] h-screen ">
+        <div class="mt-[50px] flex gap-[10px] ">
+            <div class="w-[800px] p-[10px]">
+                <div class="flex flex-col items-end p-[10px]">
+                    <h1>Usuario</h1>
+                    <h3>Web deployer</h3>
+                </div>
+                <p class="mb-[7px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima id est
+                    repudiandae
+                    reprehenderit delectus nam, voluptatibus, aut cupiditate sint saepe dolores. Perferendis
+                    iusto vitae quae odit laboriosam quo tempore suscipit?
+                    Dignissimos illum delectus cupiditate esse, optio sint corporis! Minima a quaerat nam animi?
+                    Veritatis deleniti enim sed facere libero recusandae, cumque facilis in. Libero corrupti
+                    illo molestias, possimus quo voluptates.
+                    Repellat, tenetur optio. Velit, eius excepturi. Accusamus, nam! Numquam non alias,
+                    exercitationem at, dolorum ut doloribus libero dolore labore nostrum eveniet soluta aliquam
+                    sapiente provident odit quibusdam praesentium expedita quisquam?</p><br>
+                <p class="mb-[7px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, autem expedita
+                    numquam quas, molestiae aliquam eum, iste totam repudiandae pariatur a incidunt? In laudantium
+                    veritatis sint, illum at ad saepe!</p>
+            </div>
+            <div class="w-[900px] p-[10px]">
+                <img src="/asset/foto__perfil.jpg">
+            </div>
+            <div class="w-[400px] p-[10px]">
+                <h1 class="text-2xl font-bold">Mis habilidades</h1><br>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <h1>Desarrollo Web</h1>
+                        <h3>90%</h3>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[400px] bg-slate-500 h-[20px]"></div>
+                        <div class="w-[30px] bg-stone-800 h-[20px]"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <h1>Diseño Web</h1>
+                        <h3>85%</h3>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[390px] bg-slate-500 h-[20px]"></div>
+                        <div class="w-[40px] bg-stone-800 h-[20px]"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <h1>WPO Y SEO</h1>
+                        <h3>80%</h3>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[380px] bg-slate-500 h-[20px]"></div>
+                        <div class="w-[50px] bg-stone-800 h-[20px]"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <h1>Desarrollo web y backend</h1>
+                        <h3>75%</h3>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[370px] bg-slate-500 h-[20px]"></div>
+                        <div class="w-[60px] bg-stone-800 h-[20px]"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <h1>Social Media y Marketing de Contenidos</h1>
+                        <h3>60%</h3>
+                    </div>
+                    <div class="flex">
+                        <div class="w-[330px] bg-slate-500 h-[20px]"></div>
+                        <div class="w-[100px] bg-stone-800 h-[20px]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button
+            class=" p-[20px] rounded-full bg-pink-600 text-white text-solid font-bold w-[400px] hover:border-[1px] hover:border-solid hover:border-[#E80F88] hover:text-fuchsia-600 hover:bg-white font-bold text-2xl">DESCARGAR
+            CV</button>
+    </div>
+    <div id="servicios" class="flex flex-col justify-center items-center gap-[10PX]">
+        <div class="border-y-[2px] border-solid border-[#E80F88] mt-[20px] p-[10px]">
+            <h2 class="font-bold">SERVICIOS OFRECIDOS</h2>
+        </div>
+        <div class="grid grid-cols-3 w-[1000px] p-[20px]">
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-code.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">Programacion web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-design.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">Diseño web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-wpo.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">WPO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-seo.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-smo.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">SMO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+            <div class="text-center p-[10px]">
+                <div class="w-full flex justify-center">
+                    <img src="/asset/service-hosting.svg">
+                </div>
+                <h3 class="mb-[5px] font-bold">wEB HOSTING</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, explicabo quo consequatur tempore
+                    facilis repellat vitae! Provident, debitis sunt ad quisquam, cumque consectetur iste veritatis omnis
+                    modi voluptate fugiat repellat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="portafolio" class=" bg-neutral-300 flex flex-col justify-center items-center gap-[10PX]">
+        <div class="border-y-[2px] border-solid border-[#E80F88] mt-[20px] p-[10px]">
+            <h2 class="font-bold">PORTAFOLIO</h2>
+        </div>
+        <div class="grid grid-cols-3 p-[20px] w-[900px]">
+            <div>
+                <img src="/asset/portfolio-1.jpg" alt="">
+            </div>
+            <div>
+                <img src="/asset/portfolio-2.jpg" alt="">
+            </div>
+            <div>
+                <img src="/asset/portfolio-3.jpg" alt="">
+            </div>
+            <div>
+                <img src="/asset/portfolio-4.jpg" alt="">
+            </div>
+            <div>
+                <img src="/asset/portfolio-5.jpg" alt="">
+            </div>
+            <div>
+                <img src="/asset/portfolio-6.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
