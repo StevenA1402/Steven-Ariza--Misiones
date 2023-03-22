@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Usuarios</title>
+</head>
+
+<body>
+    <main class="h-screen w-full flex">
+        <div class="h-[60rem] bg-[#C9231B] w-[10rem] "></div>
+        <div class="p-[2rem] flex flex-col w-full ">
+            <nav class="p-[5rem] flex w-full justify-center  ">
+                <div class=" w-full ">
+                    <div class=" text-center ">
+                        <h2 class="font-bold text-[2.5rem]">Usuarios</h2>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <button id="enviar" class="rounded-full bg-[#C9231B] text-white w-[20rem] h-[3rem]">Crear
+                        usuario</button>
+                </div>
+            </nav>
+            <div class="flex items-center gap-[1rem] ">
+                <h2 class="font-bold text-[1.5rem]">Buscar usuario</h2>
+                <div class="rounded-full border-black border-[0.1rem] w-[1.2rem] text-center h-[1.2rem]"><p class="text-[0.9rem]">?</p></div>
+                <input class="border-black border-[0.1rem] w-[30rem] h-[3rem] rounded-full bg-[#F3F6FB] "></input>
+            </div>
+
+            <div class="flex w-full  p-[3rem] ">
+                <p id="lista"></p>
+                <table class=" gap-[10rem] flex  " >
+
+                        <tr class="flex gap-[10rem] items-center justify-center pb-[2rem] bg-[#F3F6FB] w-[80rem]">
+                            <th> Area</th>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Edad</th>
+                          </tr>
+
+                    <tr class="flex items-center justify-center gap-[9rem]">
+       
+                    </tr>
+
+                  </table>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./usuario.js"></script>
+
+</html>

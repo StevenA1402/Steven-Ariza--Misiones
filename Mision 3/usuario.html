@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mision</title>
+</head>
+
+<body>
+    <main class="w-full h-screen flex">
+        <div class="h-[60rem] bg-[#C9231B] w-[10rem] "></div>
+        <div class="p-[5rem] flex flex-col w-full items-center justify-center">
+                <div class=" flex flex-col text-center justify-center w-full  pb-[5rem] text-center text-[2rem]">
+                    <div class=" flex">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88502 13.5081L30.9998 13.4881L31.0022 16.4881L5.68298 16.5082L17.638 27.6387L15.5937 29.8344L1.28414 16.5117L1.00218 16.5119L1.00197 16.249L0.955811 16.206L1.0019 16.1565L0.999799 13.5119L1.64238 13.5114L15.1317 0.000732422L17.2547 2.12037L5.88502 13.5081Z" fill="#C9231B"/>
+                            </svg>    
+                    </div>
+                    <div class=" text-center">
+                        <h2 class="font-bold">Registro Personas</h2>
+                    </div>  
+                </div>
+                <div class="flex flex-col gap-[4rem] ">
+                    <div class="flex gap-[4rem]">
+                        <div>
+                            <p><label>Nombres</label></p>
+                            <p><input id="nombre" type="text"
+                                    class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[18rem] "></p>
+                        </div>
+                        <div>
+                            <p><label>Apellidos</label></p>
+                            <p><input id="apellido" type="text"
+                                    class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[18rem]"></p>
+                        </div>
+                    </div>
+                    <div class="flex gap-[2rem]">
+                        <div>
+                            <p><label>Area</label></p>
+                            <p><input id="area" type="text"
+                                    class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[12rem]"></p>
+                        </div>
+                        <div>
+                            <p><label>Usuario</label></p>
+                            <p><input id="usuario" type="text"
+                                    class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[12rem]"></p>
+                        </div>
+                        <div>
+                            <p><label>Edad</label></p>
+                            <p><input id="edad" type="number"
+                                    class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[12rem]"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><label>Direccion</label></p>
+                        <p><input id="direccion" type="text"
+                                class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[40rem]"></p>
+                    </div>
+                    <div>
+                        <p><label>Email</label></p>
+                        <P><input id="email" type="email"
+                                class="border-[#ED00D5] border-[0.2rem] rounded-md h-[3rem] w-[40rem]"></P>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button id="enviar"
+                            class="rounded-full bg-[#C9231B] text-white w-[10rem] h-[3rem]">Enviar</button>
+                    </div>
+                </div>
+        </div>
+        </form>
+        </div>
+    </main>
+</body>
+<script src="./usuario.js"></script>
+
+</html>
