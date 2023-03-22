@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 
 <body>
     <main class="h-screen w-full flex">
-        <div class="h-[60rem] bg-[#C9231B] w-[10rem] "></div>
+        <div class="h-[60rem] bg-[#C9231B] w-[40rem] "></div>
         <div class="p-[2rem] flex flex-col w-full ">
             <nav class="p-[5rem] flex w-full justify-center  ">
                 <div class=" w-full ">
@@ -27,32 +26,76 @@
             </nav>
             <div class="flex items-center gap-[1rem] ">
                 <h2 class="font-bold text-[1.5rem]">Buscar usuario</h2>
-                <div class="rounded-full border-black border-[0.1rem] w-[1.2rem] text-center h-[1.2rem]"><p class="text-[0.9rem]">?</p></div>
-                <input class="border-black border-[0.1rem] w-[30rem] h-[3rem] rounded-full bg-[#F3F6FB] "></input>
+                <div  class="rounded-full border-black border-[0.1rem] w-[1.2rem] text-center h-[1.2rem]">
+                    <p class="text-[0.9rem]">?</p>
+                </div>
+                <input id="busqueda"
+                    class="border-black border-[0.1rem] w-[30rem] h-[3rem] text-center rounded-full bg-[#F3F6FB] "></input>
             </div>
 
-            <div class="flex w-full  p-[3rem] ">
-                <p id="lista"></p>
-                <table class=" gap-[10rem] flex  " >
+            <div class="pt-[3rem] shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-200 ">
+                    <thead class="bg-slate-200 ">
+                        <tr>
+                            <th scope="col" class=" text-center px-6 py-3 ">
+                                <div class="flex gap-[0.5rem] w-full justify-center">
+                                    Area
+                                    <img src="./Assets/Vector.jpg" alt="">
+                                </div>
 
-                        <tr class="flex gap-[10rem] items-center justify-center pb-[2rem] bg-[#F3F6FB] w-[80rem]">
-                            <th> Area</th>
-                            <th>Nombre</th>
-                            <th>Usuario</th>
-                            <th>Email</th>
-                            <th>Edad</th>
-                          </tr>
+                            </th>
+                            <th scope="col" class=" text-center px-6 py-3 ">
+                                <div class="flex gap-[0.5rem] w-full justify-center">
+                                    Nombre
+                                    <img src="./Assets/Vector.jpg" alt="">
+                                </div>
+                            </th>
+                            <th scope="col" class=" text-center px-6 py-3 ">
+                                <div class="flex gap-[0.5rem] w-full justify-center">
+                                    Usuario
+                                    <img src="./Assets/Vector.jpg" alt="">
+                                </div>
+                            </th>
+                            <th scope="col" class=" text-center px-6 py-3 ">
+                                <div class="flex gap-[0.5rem] w-full justify-center">
+                                    Email
+                                    <img src="./Assets/Vector.jpg" alt="">
+                                </div>
+                            </th>
+                            <th scope="col" class=" text-center px-6 py-3 ">
+                                <div class="flex gap-[0.5rem] w-full justify-center">
+                                    Edad
+                                    <img src="./Assets/Vector.jpg" alt="">
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista" class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
 
-                    <tr class="flex items-center justify-center gap-[9rem]">
-       
-                    </tr>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
 
-                  </table>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
     </main>
 </body>
-<script src="./usuario.js"></script>
+<script src="./main.js"></script>
 
 </html>

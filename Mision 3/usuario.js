@@ -7,6 +7,7 @@ let edad = document.getElementById('edad')
 let direccion = document.getElementById('direccion')
 let email = document.getElementById('email')
 let enviar = document.getElementById('enviar')
+let flecha = document.getElementById('flecha')
 let formulario = document.getElementById('formulario')
 let personas = []
 let errores = []
@@ -33,20 +34,14 @@ class Formulario {
     }
 }
 
+flecha.addEventListener('click', () => {
+    location.href = 'index.html'
+})
 
 
 enviar.addEventListener("click" , () => {
 
-    usuarios.forEach(e => {
-        if(e == usuario.value){
-            alert('Usuario repetido')
-            return e
-        }else{
-            location.href = 'usuario.html'
-            return e
-  
-        }
-    })
+
 
 
     const persona = new Formulario(
@@ -59,8 +54,9 @@ enviar.addEventListener("click" , () => {
         email.value
     );
     if(nombre.value != "", apellido.value != "", area.value != "", usuario.value != "", edad.value != "", direccion.value != "", direccion.value != "", email.value != ""){
-        errores.push(persona)
-        // location.href = 'usuario.html'
+        var formulario = JSON.parse(localStorage.getItem('formulario')) || [];
+        formulario.push(persona)
+        location.href = 'index.html'
 
     }else{
         Swal.fire({
@@ -75,11 +71,9 @@ enviar.addEventListener("click" , () => {
       }, 100);
       
       
+    localStorage.setItem('formulario', JSON.stringify(formulario))
 
-    localStorage.setItem('formulario', JSON.stringify(personas))
-    personas.push(persona)
-    console.log(personas);
-
+    usuarios.push(persona)
 
 })
     
