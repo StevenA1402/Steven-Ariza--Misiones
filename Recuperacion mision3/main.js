@@ -47,7 +47,6 @@ const main = async () => {
         if(emailData == email.value && usuarioData == usuario.value){
             location.href='inicio.html'
         }else if(emailData != email.value ){
-            email.value = ``
             emailCambio.innerHTML = `<h2>Email incorrecto, Por favor ingrese nuevamente</h2>`
         }else if(usuarioData != usuario.value){
             userCambio.innerHTML = `<h2>Usuario incorrecto, Por favor ingrese nuevamente</h2>`
