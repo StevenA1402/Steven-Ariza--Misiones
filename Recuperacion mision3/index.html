@@ -9,10 +9,10 @@
     <title>Recuperacion</title>
 </head>
 
-<body>
+<body class="h-screen">
     <main class="w-full h-screen">
         <section class=" flex flex-col  sm:flex-row sm:flex">
-            <div class=" sm:flex sm:w-[65rem] sm:h-screen sm:bg-[#191A24] sm:gap-[2rem] sm:px-[2rem]">
+            <div class=" sm:flex sm:w-[65rem] sm:h-full sm:bg-[#191A24] sm:gap-[2rem] sm:px-[2rem]">
 
                 <div class="sm:flex sm:flex-col sm:gap-[3rem] hidden sm:block">
                     <div><img src="./assets/Rectangle 6.svg" alt=""></div>
@@ -29,7 +29,7 @@
                     <div><img class="hidden sm:block" src="./assets/Rectangle 9.svg" alt=""></div>
                     <div><img class="hidden sm:block" src="./assets/Rectangle 14.svg" alt=""></div>
                 </div>
-                <div class="w-[20rem] block sm:hidden"><img class="w-[20rem]" src="./assets/Rectangle 15.svg" alt="">
+                <div class="w-full block sm:hidden"><img class="w-full" src="./assets/Rectangle 15.svg" alt="">
                 </div>
 
 
@@ -45,7 +45,7 @@
 
                     </div>
                     <div>
-                        <h2 class="font-bold text-[2rem] sm:text-[1.5rem] text-[#3E334E]">Archint</h2>
+                        <h2 class="font-bold text-[1rem] sm:text-[1.5rem] text-[#3E334E]">Archint</h2>
                     </div>
                 </header>
                 <div class="sm:w-[25rem] w-[16rem] pt-[1rem] sm:pt-[3rem]">
@@ -64,7 +64,7 @@
                     <div class="pb-[1rem]">
                         <div class="block sm:hidden">
                             <p class="text-[1rem]">Password</p>
-                            <input id="usuario"
+                            <input 
                                 class=" border-[0.2rem] placeholder-gray-500 p-[1rem] h-[4rem] w-[16rem] sm:w-[30rem] h-[3.5rem]
                             rounded-md" type="password" pattern=".{6,}" placeholder="******">
                         </div>
@@ -78,19 +78,18 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="flex  gap-[7rem] pb-[2rem]">
+                    <div class="flex gap-[1rem] w-[40rem] sm:w-[30rem] sm:gap-[13rem] pb-[2rem]">
                         <label>
-                            <input class="accent-[#3E334E]  " type="checkbox" id="cbox1"> Remember me
+                            <input class="accent-[#3E334E]  " type="checkbox" id="cbox1">  Remember me
                         </label>
-                        <br>
-                        <u>Forgot password?</u>
+                        <u><p>Forgot password?</p></u>
                     </div>
                     <div class="flex gap-[2rem] pb-[2.5rem]">
-                        <div class="flex items-center justidy-center "><button id="login"
-                                class="bg-[#3E334E] w-[14rem] text-white text-[1.3rem] h-[3.5rem] rounded-md">Login</button>
+                        <div class="flex items-center justidy-center "><button id="login" type="submit"
+                                class="bg-[#3E334E] sm:w-[14rem] text-white  h-[2rem] w-[5rem] sm:text-[1.3rem] sm:h-[3.5rem] rounded-md">Login</button>
                         </div>
                         <div class="flex items-center justidy-center "><button
-                                class="border-[0.1rem] border-black w-[14rem] text-black text-[1.3rem] h-[3.5rem] rounded-md">Sign
+                                class="border-[0.1rem] border-black w-[5rem] h-[2rem] sm:w-[14rem] text-black sm:text-[1.3rem] sm:h-[3.5rem] rounded-md">Sign
                                 up</button></div>
                     </div>
                     <div class="pb-[1rem] flex items-center justify-center w-full">
